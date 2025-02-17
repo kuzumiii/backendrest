@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "67b265ffa1f57efbbd9ff20a"
+  },
+  "orderNumber": 1001,
+  "customer": {
+    "name": "Juan Pérez",
+    "phone": 123456789,
+    "email": "juan.perez@example.com"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff1ff"
+      },
+      "quantity": 2,
+      "price": 25.5
+    },
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff204"
+      },
+      "quantity": 1,
+      "price": 5
+    }
+  ],
+  "status": "pending",
+  "totalAmount": 56,
+  "pickupTime": "2023-10-15T18:30:00Z",
+  "paymentStatus": "pending",
+  "paymentMethod": "cash"
+},
+{
+  "_id": {
+    "$oid": "67b265ffa1f57efbbd9ff20b"
+  },
+  "orderNumber": 1002,
+  "customer": {
+    "name": "María Gómez",
+    "phone": 987654321,
+    "email": "maria.gomez@example.com"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff202"
+      },
+      "quantity": 1,
+      "price": 8
+    },
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff205"
+      },
+      "quantity": 2,
+      "price": 10
+    }
+  ],
+  "status": "confirmed",
+  "totalAmount": 28,
+  "pickupTime": "2023-10-16T19:00:00Z",
+  "paymentStatus": "paid",
+  "paymentMethod": "card"
+},
+{
+  "_id": {
+    "$oid": "67b265ffa1f57efbbd9ff20c"
+  },
+  "orderNumber": 1003,
+  "customer": {
+    "name": "Carlos López",
+    "phone": 555555555,
+    "email": "carlos.lopez@example.com"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff1ff"
+      },
+      "quantity": 1,
+      "price": 25.5
+    },
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff202"
+      },
+      "quantity": 1,
+      "price": 8
+    },
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff204"
+      },
+      "quantity": 2,
+      "price": 5
+    }
+  ],
+  "status": "preparing",
+  "totalAmount": 43.5,
+  "pickupTime": "2023-10-17T20:00:00Z",
+  "paymentStatus": "pending",
+  "paymentMethod": "cash"
+},
+{
+  "_id": {
+    "$oid": "67b29958926139a3fae9dad1"
+  },
+  "orderNumber": 1004,
+  "customer": {
+    "name": "Ana López",
+    "phone": 123456789,
+    "email": "ana.lopez@example.com"
+  },
+  "items": [
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff1ff"
+      },
+      "quantity": 4,
+      "price": 25.5,
+      "_id": {
+        "$oid": "67b2a74f446a441ee9b54a94"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67b262dda1f57efbbd9ff204"
+      },
+      "quantity": 2,
+      "price": 5,
+      "_id": {
+        "$oid": "67b2a74f446a441ee9b54a95"
+      }
+    }
+  ],
+  "status": "ready",
+  "totalAmount": 56,
+  "paymentStatus": "pending",
+  "paymentMethod": "cash",
+  "createdAt": {
+    "$date": "2025-02-17T02:05:12.353Z"
+  },
+  "__v": 1
+}]

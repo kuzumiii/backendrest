@@ -31,7 +31,9 @@ const {
 
     } = require("../controllers/controller"); // Importar el controlador
 
-const  checkProductTypes  = require("../utils/checkProductTypes");
+const checkProductTypes  = require("../utils/checkProductTypes");
+const checkOrderTypes = require("../utils/checkOrderTypes");
+const checkCategoryTypes = require("../utils/checkCategoryTypes");
 
 const router = express.Router();
 
@@ -53,18 +55,18 @@ router.delete("/product/:id", deleteProductController); // Ruta para eliminar un
 router.get("/order/", getAllOrderController); // Ruta para obtener todas las ordenes
 router.get("/order/:id", getOrderController); // Ruta para obtener una orden por id
 
-router.post("/order", addOrderController); // Ruta para agregar una orden
+router.post("/order", checkOrderTypes, addOrderController); // Ruta para agregar una orden
 
-router.put("/order/:id", updateOrderController); // Ruta para modificar una orden
+router.put("/order/:id", checkOrderTypes, updateOrderController); // Ruta para modificar una orden
 
 // Rutas de categoryas -> delegado -> Controller
 
 router.get("/categories/", getAllCategoryController);
 router.get("/categories/:id", getCategoryByIdController);
 
-router.post("/categories/", addCategoryController);
+router.post("/categories/", checkCategoryTypes, addCategoryController);
 
-router.put("/categories/:id", updateCategoryController);
+router.put("/categories/:id", checkCategoryTypes, updateCategoryController);
 
 router.delete("/categories/:id", deleteCategoryController);
 

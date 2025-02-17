@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67b258daa1f57efbbd9ff1f3"
+  },
+  "name": "Plato Principal",
+  "description": "Platos principales del menú",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67b258daa1f57efbbd9ff1f4"
+  },
+  "name": "Guarnición",
+  "description": "Acompañamientos para los platos principales",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67b258daa1f57efbbd9ff1f5"
+  },
+  "name": "Bebidas",
+  "description": "Variedad de bebidas frías y calientes",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67b258daa1f57efbbd9ff1f6"
+  },
+  "name": "Postre",
+  "description": "Dulces y postres para finalizar la comida",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "67b258daa1f57efbbd9ff1f7"
+  },
+  "name": "Entradas",
+  "description": "Pequeños platos para comenzar la comida",
+  "active": true
+}]

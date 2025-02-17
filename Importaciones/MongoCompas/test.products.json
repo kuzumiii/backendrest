@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff1ff"
+  },
+  "name": "Lomo Saltado",
+  "description": "Plato tradicional peruano con carne, arroz y papas fritas",
+  "price": 25.5,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f3"
+  },
+  "imageURL": "https://ejemplo.com/lomo-saltado.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff200"
+  },
+  "name": "Ceviche",
+  "description": "Plato de pescado marinado en limón con cebolla y ají",
+  "price": 20,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f3"
+  },
+  "imageURL": "https://ejemplo.com/ceviche.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff201"
+  },
+  "name": "Arroz Chaufa",
+  "description": "Arroz frito con vegetales, huevo y carne",
+  "price": 18,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f3"
+  },
+  "imageURL": "https://ejemplo.com/arroz-chaufa.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff202"
+  },
+  "name": "Papas Fritas",
+  "description": "Porción de papas fritas crujientes",
+  "price": 8,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f4"
+  },
+  "imageURL": "https://ejemplo.com/papas-fritas.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff203"
+  },
+  "name": "Ensalada César",
+  "description": "Ensalada con pollo, crutones y aderezo césar",
+  "price": 12,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f4"
+  },
+  "imageURL": "https://ejemplo.com/ensalada-cesar.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff204"
+  },
+  "name": "Coca-Cola",
+  "description": "Refresco de cola",
+  "price": 5,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f5"
+  },
+  "imageURL": "https://ejemplo.com/coca-cola.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff205"
+  },
+  "name": "Tarta de Chocolate",
+  "description": "Postre de chocolate con crema",
+  "price": 10,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f6"
+  },
+  "imageURL": "https://ejemplo.com/tarta-chocolate.jpg",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "67b262dda1f57efbbd9ff206"
+  },
+  "name": "Tequeños",
+  "description": "Palitos de queso envueltos en masa",
+  "price": 9,
+  "category": {
+    "$oid": "67b258daa1f57efbbd9ff1f7"
+  },
+  "imageURL": "https://ejemplo.com/tequenos.jpg",
+  "available": true
+}]
