@@ -34,6 +34,7 @@ const {
 const checkProductTypes  = require("../utils/checkProductTypes");
 const checkOrderTypes = require("../utils/checkOrderTypes");
 const checkCategoryTypes = require("../utils/checkCategoryTypes");
+const checkProductImageTypes = require("../utils/checkProductImage");
 
 const router = express.Router();
 
@@ -44,7 +45,7 @@ router.get("/product", getAllProductController); // Ruta para obtener todos los 
 router.get("/product/:id", getProductByIdController); // Ruta para obtener un producto
 router.get("/product/category/:categoryId", getProductByCategoryController); // Ruta para obtener un producto por categoria
 
-router.post("/product", checkProductTypes, addProductController); // Ruta para agregar un producto
+router.post("/product", checkProductTypes, checkProductImageTypes, addProductController); // Ruta para agregar un producto
 
 router.put("/product/:id", checkProductTypes, updateProductController); // Ruta para modificar un producto
 

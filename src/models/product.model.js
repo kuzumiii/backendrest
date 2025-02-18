@@ -8,7 +8,10 @@ const ProductSchema = Schema({
         required: true
     },
 
-    description: String,// Descripcion del producto
+    description:{
+        type: String,
+        default: "hola"
+    },// Descripcion del producto
 
     price: {            // Precio del producto
         type: Number,

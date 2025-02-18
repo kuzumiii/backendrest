@@ -6,8 +6,8 @@ const checkProductTypes = ( request, response, next ) => {
 
     if( typeof product.name !== "string") arrayOfValidation.push("El campo nombre debe ser un String.");
     if( product.price < 0 ) arrayOfValidation.push("El campo precio no puede ser menor a 0");
-    if( typeof product.category !== "Schema.Types.ObjectId") arrayOfValidation.push("El campo category debe ser una Categoria.");
-    if( typeof product.imageURL !== "string") arrayOfValidation.push("El campo Imagen debe ser un String .");
+    if( typeof product.category !== "string") arrayOfValidation.push("El campo category debe ser una String.");
+    if( typeof product.imageURL !== "string") arrayOfValidation.push(`El campo Imagen debe ser un String . pero tenes un ${ typeof product.imageURL}`);
     if( typeof product.available !== "boolean") arrayOfValidation.push("El campo available debe ser un Boolean.");
 
     if( arrayOfValidation.length > 0 ) {
